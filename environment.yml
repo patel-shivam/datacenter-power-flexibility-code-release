@@ -1,0 +1,13 @@
+# The GPU environment the measurements were taken in (Python 3.12, vLLM 0.11.0, PyTorch 2.8.0 + CUDA 12.6).
+#   conda env create -f environment.yml -p ./env
+#   ./env/bin/python concurrency_sweep.py --help
+# For the figures and tables alone (no GPU), requirements.txt is enough.
+name: llm-routing-power
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - -r requirements-gpu.txt

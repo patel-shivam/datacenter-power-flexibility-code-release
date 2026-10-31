@@ -1,0 +1,6 @@
+# Enough to regenerate the figures and the result tables from the shipped measurements (no GPU).
+# The versions are the ones the paper's figures and tables were produced with (Python 3.12).
+numpy==2.2.6
+pandas==3.0.3
+matplotlib==3.10.9
+scipy==1.17.1

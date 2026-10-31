@@ -1,0 +1,2 @@
+band_w,f_at_max,f_at_min,max_waiting,n_completed_this_load,offered_decode_tok_s,offered_reqs_s,p_max_w,p_min_w,util
+503.4495454545456,0.3,0.75,0.0,40280,27693.726302026585,90.0,1846.5522727272728,1343.1027272727272,

@@ -1,0 +1,405 @@
+{
+  "args": {
+    "n_large": 3,
+    "n_small": 1,
+    "large": "llama31-8b",
+    "small": "llama32-1b",
+    "workload": "sharegpt",
+    "concurrency_large": 64,
+    "concurrency_small": 128,
+    "concurrency_per_instance": null,
+    "pack_cap_large": null,
+    "pack_cap_small": null,
+    "gpu_memory_utilization": null,
+    "policy": "pack",
+    "arrival": "poisson",
+    "burst_duty": 0.3,
+    "burst_s": 5.0,
+    "class_split": "0.0,0.0,1.0",
+    "pool_size": 4096,
+    "dt": 1.0,
+    "seed": 0,
+    "out_tag": "fine_lam90",
+    "dry_run": false,
+    "utils": "0.1,0.2,0.35,0.5,0.65,0.8",
+    "loads": "90",
+    "residence_report": "results/power_curves_report.json",
+    "f_grid": "0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75",
+    "point_s": 45.0
+  },
+  "workload": {
+    "name": "sharegpt",
+    "kind": "trace",
+    "trace": "sharegpt",
+    "max_prefill": 4096,
+    "max_decode": 2048
+  },
+  "fleet_capacity": {
+    "available": true,
+    "capacity_reqs_s": 132.13532200677764,
+    "capacity_decode_tok_s": 40659.104916509445,
+    "large": {
+      "key": "llama31-8b__sharegpt",
+      "c_tok": 6500.863459010354,
+      "c_req": 21.126723970985324,
+      "residence": {
+        "A": 2.0321326398125215,
+        "B": 0.015668100242911525
+      }
+    },
+    "small": {
+      "key": "llama32-1b__sharegpt",
+      "c_tok": 21156.514539478387,
+      "c_req": 68.75515009382167,
+      "residence": {
+        "A": 0.5642682895856223,
+        "B": 0.010160899136729634
+      }
+    },
+    "residence": {
+      "large": {
+        "A": 2.0321326398125215,
+        "B": 0.015668100242911525
+      },
+      "small": {
+        "A": 0.5642682895856223,
+        "B": 0.010160899136729634
+      }
+    },
+    "concurrency_large": 64,
+    "concurrency_small": 128
+  },
+  "concurrency_caps": [
+    80,
+    80,
+    80,
+    144
+  ],
+  "pack_caps": [
+    64,
+    64,
+    64,
+    128
+  ],
+  "idle_power_w_total": 451.54856666666666,
+  "power_sampling": {
+    "distinct_devices_verified": true,
+    "pci_bus_id_by_replica": {
+      "0": "00000000:0A:00.0",
+      "1": "00000000:18:00.0",
+      "2": "00000000:3C:00.0",
+      "3": "00000000:87:00.0"
+    },
+    "n_replicas": 4,
+    "power_window_s": 0.5,
+    "telemetry_interval_s": 0.1
+  },
+  "worker_errors": [],
+  "sanity": {
+    "ok": true,
+    "n_ticks_checked": 440,
+    "fleet_cap_w": 2940.0,
+    "worst_total_w": 1894.2,
+    "n_ticks_over_fleet_cap": 0,
+    "card_cap_w": 735.0,
+    "worst_per_lit_replica_w": 525.9,
+    "n_ticks_over_card_cap": 0
+  },
+  "points": [
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 88.4,
+      "arrival_cv": 1.0019353149497643,
+      "f": 0.3,
+      "power_w": 1846.5522727272728,
+      "power_large_w": 1553.6304545454548,
+      "power_small_w": 292.9209090909091,
+      "running": 197.27272727272728,
+      "waiting": 0.0,
+      "active_large": 3.0,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.047322727272727266,
+      "b_max": 66.9090909090909
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 88.28888888888889,
+      "arrival_cv": 0.9983447404819035,
+      "f": 0.35,
+      "power_w": 1836.091818181818,
+      "power_large_w": 1536.939090909091,
+      "power_small_w": 299.1513636363636,
+      "running": 192.86363636363637,
+      "waiting": 0.0,
+      "active_large": 3.0,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.047509090909090904,
+      "b_max": 66.31818181818181
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 89.84444444444445,
+      "arrival_cv": 0.9987675981253059,
+      "f": 0.4,
+      "power_w": 1819.1818181818182,
+      "power_large_w": 1514.5577272727276,
+      "power_small_w": 304.6227272727273,
+      "running": 186.6818181818182,
+      "waiting": 0.0,
+      "active_large": 3.0,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.046163636363636365,
+      "b_max": 65.0909090909091
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 90.13333333333334,
+      "arrival_cv": 0.9938386727807201,
+      "f": 0.45,
+      "power_w": 1791.9636363636362,
+      "power_large_w": 1486.6954545454546,
+      "power_small_w": 305.2677272727273,
+      "running": 176.8181818181818,
+      "waiting": 0.0,
+      "active_large": 3.0,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.045181818181818184,
+      "b_max": 64.68181818181819
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 91.24444444444444,
+      "arrival_cv": 0.9951463372793868,
+      "f": 0.5,
+      "power_w": 1718.346818181818,
+      "power_large_w": 1408.7354545454546,
+      "power_small_w": 309.6127272727272,
+      "running": 179.77272727272728,
+      "waiting": 0.0,
+      "active_large": 2.8181818181818183,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.0453,
+      "b_max": 64.63636363636364
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 91.82222222222222,
+      "arrival_cv": 1.0092788992810513,
+      "f": 0.55,
+      "power_w": 1520.978181818182,
+      "power_large_w": 1208.5813636363637,
+      "power_small_w": 312.39818181818185,
+      "running": 163.63636363636363,
+      "waiting": 0.0,
+      "active_large": 2.1818181818181817,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.04168636363636364,
+      "b_max": 66.04545454545455
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 88.0,
+      "arrival_cv": 0.9790181942765868,
+      "f": 0.6,
+      "power_w": 1506.3736363636365,
+      "power_large_w": 1195.9209090909092,
+      "power_small_w": 310.45,
+      "running": 164.77272727272728,
+      "waiting": 0.0,
+      "active_large": 2.1818181818181817,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.046240909090909096,
+      "b_max": 65.0909090909091
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 93.08888888888889,
+      "arrival_cv": 0.980453444543365,
+      "f": 0.65,
+      "power_w": 1421.48,
+      "power_large_w": 1099.76,
+      "power_small_w": 321.72,
+      "running": 166.0,
+      "waiting": 0.0,
+      "active_large": 2.0,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.04338636363636364,
+      "b_max": 79.36363636363636
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 89.02222222222223,
+      "arrival_cv": 1.0195511162677076,
+      "f": 0.7,
+      "power_w": 1397.0631818181819,
+      "power_large_w": 1074.4581818181819,
+      "power_small_w": 322.6045454545455,
+      "running": 159.6818181818182,
+      "waiting": 0.0,
+      "active_large": 2.0,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.0399,
+      "b_max": 84.13636363636364
+    },
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "drained": true,
+      "offered_decode_tok_s": 27693.726302026585,
+      "realized_reqs_s": 88.46666666666667,
+      "arrival_cv": 0.9890230064592456,
+      "f": 0.75,
+      "power_w": 1343.1027272727272,
+      "power_large_w": 1020.1736363636363,
+      "power_small_w": 322.9309090909091,
+      "running": 164.04545454545453,
+      "waiting": 0.0,
+      "active_large": 1.9090909090909092,
+      "active_small": 1.0,
+      "n_ticks": 22,
+      "kv_usage_max": 0.0404,
+      "b_max": 101.18181818181819
+    }
+  ],
+  "bands": [
+    {
+      "offered_reqs_s": 90.0,
+      "util": null,
+      "offered_decode_tok_s": 27693.726302026585,
+      "p_min_w": 1343.1027272727272,
+      "f_at_min": 0.75,
+      "p_max_w": 1846.5522727272728,
+      "f_at_max": 0.3,
+      "band_w": 503.4495454545456,
+      "max_waiting": 0.0,
+      "n_completed_this_load": 40280
+    }
+  ],
+  "drains": [
+    {
+      "util": null,
+      "f": 0.3,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 0.05194132192991674
+    },
+    {
+      "util": null,
+      "f": 0.35,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 8.594468974974006
+    },
+    {
+      "util": null,
+      "f": 0.4,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 5.638295532902703
+    },
+    {
+      "util": null,
+      "f": 0.45,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 5.524643748998642
+    },
+    {
+      "util": null,
+      "f": 0.5,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 5.382346165017225
+    },
+    {
+      "util": null,
+      "f": 0.55,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 5.234674030914903
+    },
+    {
+      "util": null,
+      "f": 0.6,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 5.3056055039633065
+    },
+    {
+      "util": null,
+      "f": 0.65,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 5.310145961004309
+    },
+    {
+      "util": null,
+      "f": 0.7,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 4.94529214000795
+    },
+    {
+      "util": null,
+      "f": 0.75,
+      "drained": true,
+      "outstanding": 0,
+      "elapsed_s": 5.37002415698953
+    }
+  ],
+  "latency": {
+    "ttft_ms": {
+      "p50": 9.142381022684276,
+      "p90": 18.924381001852453,
+      "p95": 23.396483971737325,
+      "p99": 33.4784499136731,
+      "mean": 11.273952820769262,
+      "n": 40423
+    },
+    "tbt_ms": {
+      "p50": 4.880620442890448,
+      "p90": 9.713880584302654,
+      "p95": 9.82432043986283,
+      "p99": 10.124225684322475,
+      "mean": 6.356894100010785,
+      "n": 40423
+    },
+    "n": 40423
+  }
+}

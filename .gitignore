@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+slurm_logs/
+.cache/
+*.zip
+.ipynb_checkpoints/
+figures/
+.DS_Store

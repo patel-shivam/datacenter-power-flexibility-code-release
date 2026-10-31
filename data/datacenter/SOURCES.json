@@ -1,0 +1,44 @@
+{
+  "azure_llm_2024_code_1week": {
+    "accessed": "2026-10-14",
+    "bytes": 691989454,
+    "note": "Azure LLM inference trace 2024 (CC-BY-4.0); Splitwise ISCA'24 / DynamoLLM HPCA'25",
+    "sha256": "71de5c55cbc35f8f1ed0b6b7806b4cd1e9764b0058469725a6aac98023a1448f",
+    "url": "https://github.com/Azure/AzurePublicDataset/releases/download/dataset-llm-2024/AzureLLMInferenceTrace_code_1week.csv"
+  },
+  "azure_llm_2024_conv_1week": {
+    "accessed": "2026-10-14",
+    "bytes": 1135195393,
+    "note": "Azure LLM inference trace 2024 (CC-BY-4.0); Splitwise ISCA'24 / DynamoLLM HPCA'25",
+    "sha256": "a0cc9b969a9bbf0fd811802cbf4323edd3a209ace791e3799ad4f9207f213941",
+    "url": "https://github.com/Azure/AzurePublicDataset/releases/download/dataset-llm-2024/AzureLLMInferenceTrace_conv_1week.csv"
+  },
+  "eia930_2024_Jan_Jun": {
+    "accessed": "2026-10-14",
+    "bytes": 41742812,
+    "note": "EIA-930 BALANCE six-month file",
+    "sha256": "26768c495c3ba987e29d79df2e40d4e741f9dbcff086f53c12ff774465756a10",
+    "url": "https://www.eia.gov/electricity/gridmonitor/sixMonthFiles/EIA930_BALANCE_2024_Jan_Jun.csv"
+  },
+  "eia930_2024_Jul_Dec": {
+    "accessed": "2026-10-14",
+    "bytes": 47928993,
+    "note": "EIA-930 BALANCE six-month file",
+    "sha256": "a602a8e577cfdd2fa3083413eaa4dd8ba7f0d2b26a2986f8f6d22917465ea49f",
+    "url": "https://www.eia.gov/electricity/gridmonitor/sixMonthFiles/EIA930_BALANCE_2024_Jul_Dec.csv"
+  },
+  "eia930_2025_Jan_Jun": {
+    "accessed": "2026-10-14",
+    "bytes": 47565054,
+    "note": "EIA-930 BALANCE six-month file",
+    "sha256": "fac4bb991dfa1dab3b4b35300ccab54ac99be13a40ce91954db8ddafb2816242",
+    "url": "https://www.eia.gov/electricity/gridmonitor/sixMonthFiles/EIA930_BALANCE_2025_Jan_Jun.csv"
+  },
+  "eia930_2025_Jul_Dec": {
+    "accessed": "2026-10-14",
+    "bytes": 48256021,
+    "note": "EIA-930 BALANCE six-month file",
+    "sha256": "1146158b972439db7c7f4cc7d0491e07644ddbf244d03b8ecb44cb2c833d10f1",
+    "url": "https://www.eia.gov/electricity/gridmonitor/sixMonthFiles/EIA930_BALANCE_2025_Jul_Dec.csv"
+  }
+}

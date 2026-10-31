@@ -1,0 +1,11 @@
+fleet,label,workload,pair,n_large,n_small,C_fleet,u_star,c_large,c_small,marker,policy,n_runs,n_held_probes
+llama_sharegpt,Llama pair · ShareGPT,sharegpt,llama31-8b,3,1,134.25,0.5139664804469274,21.75,69.0,^,pack,10,193
+llama_arxiv,Llama pair · arXiv,arxiv_summarization,llama31-8b,3,1,61.875,0.5575757575757576,9.125,34.5,^,pack,4,79
+llama_1024,Llama pair · 1024/1024,fixed_1024_1024,llama31-8b,3,1,28.90625,0.5881081081081081,3.96875,17.0,^,pack,2,61
+qwen_sharegpt,Qwen pair · ShareGPT,sharegpt,qwen3-8b,3,1,101.5,0.39408866995073893,20.5,40.0,D,pack,2,81
+llama_128,Llama pair · 128/128,fixed_128_128,llama31-8b,3,1,329.0,0.5531914893617021,49.0,182.0,^,pack,2,82
+llama_256,Llama pair · 256/256,fixed_256_256,llama31-8b,3,1,160.25,0.5553822152886115,23.75,89.0,^,pack,2,81
+llama_512,Llama pair · 512/512,fixed_512_512,llama31-8b,3,1,71.625,0.5445026178010471,10.875,39.0,^,pack,2,80
+qwen_1024,Qwen pair · 1024/1024,fixed_1024_1024,qwen3-8b,3,1,18.8125,0.34219269102990035,4.125,6.4375,D,pack,2,56
+llama_sharegpt_5L3S,Llama 5L+3S (8 GPU) · ShareGPT,sharegpt,llama31-8b,5,3,315.75,0.6555819477434679,21.75,69.0,s,pack,2,74
+llama_sharegpt_4L4S,Llama 4L+4S (8 GPU) · ShareGPT,sharegpt,llama31-8b,4,4,363.0,0.7603305785123967,21.75,69.0,p,pack,1,43
